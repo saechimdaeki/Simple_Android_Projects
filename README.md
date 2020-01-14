@@ -1,5 +1,4 @@
-# study_android_do_it
-Examples for Android study for project preparation repository
+### These apps are simple apps that I've made while studying Android, and they're bringing together the features I need.
 
 
 voice : https://developer.android.com/training/wearables/apps/voice.html
