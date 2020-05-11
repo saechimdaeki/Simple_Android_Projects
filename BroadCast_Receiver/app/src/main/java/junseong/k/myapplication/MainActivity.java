@@ -71,9 +71,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        unregisterReceiver(brOn);
-        unregisterReceiver(brOn);
-        unregisterReceiver(batteryReceiver);
+        try{
+            unregisterReceiver(brOn);
+            unregisterReceiver(brOn);
+            unregisterReceiver(batteryReceiver);
+        }catch(IllegalArgumentException e){
+            
+        }
+
     }
 
     @Override
