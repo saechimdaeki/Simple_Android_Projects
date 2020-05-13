@@ -200,4 +200,5 @@ public class MainActivity extends AppCompatActivity implements GoogleApiClient.C
         markerOptions.icon(BitmapDescriptorFactory.fromBitmap(bitmap));
         map.addMarker(markerOptions);
     }
+
 }
