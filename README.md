@@ -1,8 +1,4 @@
-### These apps are simple apps that I've made while studying Android, and they're bringing together the features I need.
-
-
-voice : https://developer.android.com/training/wearables/apps/voice.html
-
-## for android project study 
-
-#### arraylist가 헷갈릴때 https://arabiannight.tistory.com/entry/324
+## It is a repository that learns the functions needed for Android working development through simple examples.
+## If you need the features you need, you can go to the directory that contains the features you need.
+### I hope it helps develop pleasant Android.
+![Image](https://9to5google.com/wp-content/uploads/sites/4/2019/08/android_2019_logo_2.jpg?quality=82&strip=all&w=1600)
