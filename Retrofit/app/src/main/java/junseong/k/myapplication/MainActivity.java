@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String QUERY = "travel";
     private static final String API_KEY = "ebbc3f52dc294e72aa888b8fe88aa962";
+    private static final String TAG = "뀨우우";
 
     RecyclerView recyclerView;
     @Override
@@ -41,6 +43,9 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(Call<PageListModel> call, Response<PageListModel> response) {
                         if(response.isSuccessful()){
+                            Log.d(TAG, "onResponse: ConfigurationListener::"+call.request().url());
+                            Log.d(TAG, "값"+response.body().articles);
+
                             MyAdapter adapter=new MyAdapter(response.body().articles);
                             recyclerView.setAdapter(adapter);
                         }
